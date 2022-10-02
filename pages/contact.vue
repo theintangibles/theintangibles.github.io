@@ -4,13 +4,13 @@
       header
         ContactX
       .content
-        a.newyork(href='mailto:newyork@theintangibles.com')
+        a.newyork(href='mailto:info.ny@theintangibles.com')
           NewYork
-        a.losangeles(href='mailto:losangeles@theintangibles.com')
+        a.losangeles(href='mailto:info.la@theintangibles.com')
           LosAngeles
-        a.london(href='mailto:london@theintangibles.com')
+        a.london(href='mailto:info.uk@theintangibles.com')
           London
-        a.hongkong(href='mailto:hongkong@theintangibles.com')
+        a.hongkong(href='mailto:info.hk@theintangibles.com')
           HongKong
       footer
         a.home(href='/')
