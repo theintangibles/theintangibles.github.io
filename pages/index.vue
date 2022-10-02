@@ -17,32 +17,35 @@ export default {
 }
 </script>
 <style lang='sass' scoped>
-section
+#intangibles-index
   width: 100vw
-  height: 80vh
+  height: 100vh
   display: flex
   justify-content: center
   align-items: center
-  a
+  section
     display: flex
     justify-content: center
     align-items: center
-  svg
-    width: 70%
-    opacity: 0
-    animation: fadein 3s
-    animation-fill-mode: forwards
-    g
-      path
-        transition: all .2s linear
-    // &:hover
-      g#intangibles
-        path
-          fill: #624c79
-@media screen and (max-width: 768px)
-  section
-    height: 100vh
-    align-items: center
+    a
+      display: flex
+      justify-content: center
+      align-items: center
     svg
-      width: 80%
+      width: 70%
+      opacity: 0
+      animation: fadein 3s
+      animation-fill-mode: forwards
+      g
+        path
+          transition: all .2s linear
+      // &:hover
+        g#intangibles
+          path
+            fill: #624c79
+  @media screen and (max-width: 768px)
+    section
+      align-items: center
+      svg
+        width: 80%
 </style>
