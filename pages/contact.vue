@@ -27,10 +27,26 @@ import HomeButton from '~/components/HomeButton.vue'
 
 export default {
   name: 'Contact',
-  components: { ContactX, NewYork, LosAngeles, London, HongKong, HomeButton }
+  components: { ContactX, NewYork, LosAngeles, London, HongKong, HomeButton },
+  mounted() {
+    window.addEventListener('resize', this.appHeight)
+    this.appHeight()
+  },
+  methods: {
+    appHeight() {
+     const doc = document.documentElement
+     doc.style.setProperty('—app-height', `${window.innerHeight}px`)
+   },
+  },
 }
 </script>
 <style lang='sass'>
+:root
+  —app-height: 100%
+body
+ height: 100vh
+ height: var( —app-height)
+  
 #intangibles-contact
   height: 90vh
   width: 100%
@@ -95,12 +111,16 @@ export default {
       animation-fill-mode: forwards
 
 @media screen and (max-width: 768px)
-  html, body, #__nuxt, #__layout, section
+  // html, body, #__nuxt, #__layout, section
     background: #070606
-    height: 100%
+    height: 100vh
   #intangibles-contact
     display: block !important
-    height: 100%
+    min-height: 100vh
+    min-height: -webkit-fill-available
+  section
+    background: #070606
+    height: 100vh  
     padding: 15vh 0
   header
     height: 16.6%
