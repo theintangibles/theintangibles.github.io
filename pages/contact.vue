@@ -40,7 +40,7 @@ export default {
   },
 }
 </script>
-<style lang='sass'>
+<style lang='sass' scoped>
 :root
   —app-height: 100%
 body
@@ -87,7 +87,7 @@ body
           path
             animation-delay: 2s
       svg
-        max-height: 17px
+        max-height: 13.5px
   footer
     display: flex
     justify-content: center
@@ -111,23 +111,21 @@ body
       animation-fill-mode: forwards
 
 @media screen and (max-width: 768px)
-  // html, body, #__nuxt, #__layout, section
-    background: #070606
-    height: 100vh
   #intangibles-contact
-    display: block !important
     min-height: 100vh
     min-height: -webkit-fill-available
   section
     background: #070606
-    height: 100vh  
-    padding: 15vh 0
+    height: 80%
+    // height: -webkit-fill-available
   header
     height: 16.6%
     margin-bottom: 0px !important
     display: flex
     justify-content: center
     align-items: center
+    svg
+      height: 15px !important
   .content
     height: 66.7%
     margin-bottom: 0px !important
@@ -139,5 +137,7 @@ body
     display: flex
     justify-content: center
     align-items: center
+    svg
+      height: 30px !important
     
 </style>

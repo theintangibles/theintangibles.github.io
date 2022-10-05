@@ -5,9 +5,6 @@
         TheIntangibles
       a.launching(href='/contact')
         Launching2023
-      br
-      a.launching2(href='/contact')
-        Launching2023
 </template>
 
 <script>
@@ -39,20 +36,6 @@ export default {
           path
             fill: #A191B2
     .launching
-      svg
-        width: 50%
-        opacity: 0
-        animation: fadein 2s
-        animation-fill-mode: forwards
-        animation-delay: 0.5s
-        ::v-deep path
-          transition: all .2s linear
-          fill: white
-      &:hover
-        ::v-deep svg
-          path
-            fill: #A191B2
-    .launching2
       svg
         width: 50%
         opacity: 0
