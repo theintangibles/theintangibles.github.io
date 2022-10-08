@@ -67,23 +67,23 @@ body
     a
       text-align: center
       &:hover
-        svg
+        ::v-deep svg
           path 
             fill: #624c79
       &.newyork
-        svg
+        ::v-deep svg
           path
             animation-delay: 0.5s
       &.losangeles
-        svg
+        ::v-deep svg
           path
             animation-delay: 1s
       &.london
-        svg
+        ::v-deep svg
           path
             animation-delay: 1.5s
       &.hongkong
-        svg
+        ::v-deep svg
           path
             animation-delay: 2s
       svg
@@ -100,10 +100,10 @@ body
           path
             animation-delay: 2.5s
       &:hover
-        svg
+        ::v-deep svg
           path 
             fill: white
-  svg
+  ::v-deep svg
     path
       transition: all .2s linear
       opacity: 0
