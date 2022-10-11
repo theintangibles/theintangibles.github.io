@@ -1,9 +1,9 @@
 <template lang='pug'>
   #intangibles-contact
-    section
+    .container
       header
         ContactX
-      .content
+      .cities
         a.newyork(href='mailto:info.ny@theintangibles.com')
           NewYork
         a.losangeles(href='mailto:info.la@theintangibles.com')
@@ -53,17 +53,23 @@ body
   display: flex
   justify-content: center
   align-items: center
+  .container
+    width: 70%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
   
   header
-    margin-bottom: 7vh
+    margin-bottom: 10%
     text-align: center
     svg
-      height: 18px
-
-  .content
+      width: 50%
+  .cities
     display: flex
     justify-content: space-around
-    margin-bottom: 10vh
+    margin-bottom: 10%
+    width: 100%
     a
       text-align: center
       &:hover
@@ -87,15 +93,16 @@ body
           path
             animation-delay: 2s
       svg
-        max-height: 13.5px
+        height: 18.5px
   footer
     display: flex
     justify-content: center
     a
       text-align: center
       svg
-        width: 70%
+        width: 90%
       &.home
+        max-width: 46px
         svg
           path
             animation-delay: 2.5s
@@ -114,26 +121,20 @@ body
   #intangibles-contact
     min-height: 100vh
     min-height: -webkit-fill-available
-  section
-    background: #070606
+  .container
     height: 80%
-    // height: -webkit-fill-available
-  header
-    height: 16.6%
-    margin-bottom: 0px !important
     display: flex
-    justify-content: center
     align-items: center
-    svg
-      height: 15px !important
-  .content
-    height: 66.7%
-    margin-bottom: 0px !important
+    justify-content: center
+    height: -webkit-fill-available
+  .cities
+    height: 50vh
     flex-direction: column
-    svg
-      height: 15px
+    a
+      width: 100% !important
+      svg
+        height: 15px !important
   footer
-    height: 16.6%
     display: flex
     justify-content: center
     align-items: center

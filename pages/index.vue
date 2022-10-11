@@ -1,6 +1,7 @@
 <template lang='pug'>
   #intangibles-index
-    section
+    //- section
+    .container
       a.logo(href='/contact')
         TheIntangibles
       a.launching(href='/contact')
@@ -26,11 +27,34 @@ export default {
   display: flex
   justify-content: center
   align-items: center
-  section
+  .container
+    width: 40%
+    max-width: 800px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  .logo
+    width: 100%
+    margin-bottom: 20%
+    &:hover
+      ::v-deep svg
+        path
+          fill: #A191B2
+  .launching
+    width: 45%
+    svg
+      animation-delay: 1s
+    &:hover
+      ::v-deep svg
+        path
+          fill: white
+  // section
     a
       display: flex
       justify-content: center
       align-items: center
+        
       &:hover
         ::v-deep g#intangibles
           path
@@ -50,18 +74,15 @@ export default {
           path
             fill: white
     svg
-      width: 70%
       opacity: 0
       animation: fadein 3s
       animation-fill-mode: forwards
       ::v-deep g
         path
           transition: all .2s linear
-    .logo
-      margin-bottom: 4vh
   @media screen and (max-width: 768px)
-    section
+    .container
       align-items: center
-      svg
-        width: 80%
+      width: 80%
+      max-width: 500px
 </style>
