@@ -5,7 +5,7 @@ export default {
     port: 4000
   },
   router: {
-    base: '/theintangibles/'
+    base: '/theintangibles.github.io/'
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
