@@ -78,20 +78,16 @@ body
             fill: #624c79
       &.newyork
         ::v-deep svg
-          path
-            animation-delay: 0.5s
+          animation-delay: 0.5s
       &.losangeles
         ::v-deep svg
-          path
-            animation-delay: 1s
+          animation-delay: 1s
       &.london
         ::v-deep svg
-          path
-            animation-delay: 1.5s
+          animation-delay: 1.5s
       &.hongkong
         ::v-deep svg
-          path
-            animation-delay: 2s
+          animation-delay: 2s
       svg
         height: 18.5px
   footer
@@ -99,13 +95,10 @@ body
     justify-content: center
     a
       text-align: center
+      max-width: 46px
       svg
         width: 90%
-      &.home
-        max-width: 46px
-        svg
-          path
-            animation-delay: 2.5s
+        animation-delay: 2.2s
       &:hover
         ::v-deep svg
           path 
