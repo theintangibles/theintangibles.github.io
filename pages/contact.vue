@@ -96,6 +96,7 @@ body
     a
       text-align: center
       max-width: 46px
+      background: red
       svg
         // width: 90%
         animation-delay: 2.2s
