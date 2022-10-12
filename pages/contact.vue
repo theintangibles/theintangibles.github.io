@@ -97,7 +97,7 @@ body
       text-align: center
       max-width: 46px
       svg
-        width: 90%
+        // width: 90%
         animation-delay: 2.2s
       &:hover
         ::v-deep svg
