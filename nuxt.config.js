@@ -5,7 +5,7 @@ export default {
     port: 4000
   },
   router: {
-    base: '/theintangibles.github.io/'
+    base: '/'
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -21,13 +21,13 @@ export default {
       { name: 'theme-color', content: '#070606' },
       { name: 'robots', content: 'noindex' },
       { name: 'twitter:title', content: 'The Intangibles' },
-      { name: 'twitter:description', content: 'Twitter Card Here' },
+      { name: 'twitter:description', content: '' },
       { name: 'twitter:card', content: 'summary_large_image' },
-      // { name: 'twitter:image', content: 'https://www.userevidence.com/img/external/Library.png' },
+      { name: 'twitter:image', content: 'https://theintangibles.com/the-intangibles.jpg' },
       { name: 'twitter:image:alt', content: 'The Intangibles' },
       { property: 'og:title', content: 'The Intangibles' },
-      { property: 'og:description', content: 'OG Card Here' },
-      // { property: 'og:image', content: 'https://www.userevidence.com/img/external/Library.png' },
+      { property: 'og:description', content: '' },
+      { property: 'og:image', content: 'https://https://theintangibles.com/the-intangibles.jpg' },
       { property: 'og:url', content: 'https://www.TheIntangibles.com' },
       { property: 'og:site_name', content: 'The Intangibles' },
     ],
