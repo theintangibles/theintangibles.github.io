@@ -28,6 +28,13 @@ import HomeButton from '~/components/HomeButton.vue'
 export default {
   name: 'Contact',
   components: { ContactX, NewYork, LosAngeles, London, HongKong, HomeButton },
+  head: {
+    title: 'Contact The Intangibles',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Contact The Intangibles' },
+      { property: 'og:url', content: 'https://theintangibles.com/contact' },
+    ],
+  },
   mounted() {
     window.addEventListener('resize', this.appHeight)
     this.appHeight()

@@ -1,6 +1,5 @@
 <template lang='pug'>
   #intangibles-index
-    //- section
     .container
       a.logo(href='/contact')
         TheIntangibles
@@ -17,7 +16,14 @@ import Launching2023 from '~/components/Launching2023.vue'
 
 export default {
   name: 'IndexPage',
-  components: { The, Intangibles, Tm, TheIntangibles, Launching2023 }
+  components: { The, Intangibles, Tm, TheIntangibles, Launching2023 },
+  head: {
+    title: 'The Intangibles',
+    meta: [
+      { name: 'twitter:title', content: 'The Intangibles' },
+      { property: 'og:title', content: 'The Intangibles' },
+    ],
+  },
 }
 </script>
 <style lang='sass' scoped>
