@@ -118,7 +118,7 @@ body
       animation: fadein 1s
       animation-fill-mode: forwards
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 951px)
   #intangibles-contact
     min-height: 100vh
     min-height: -webkit-fill-available
