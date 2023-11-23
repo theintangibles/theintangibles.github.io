@@ -3,8 +3,6 @@
     .container
       a.logo(href='/contact')
         TheIntangibles
-      a.launching(href='/contact')
-        Launching2023
 </template>
 
 <script>
