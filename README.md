@@ -1,5 +1,12 @@
 # the-intangibles
 
+To deploy:
+
+`yarn generate`
+`yarn deploy`
+
+Thats it.
+
 ## Build Setup
 
 ```bash
